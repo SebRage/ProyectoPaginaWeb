@@ -1,0 +1,491 @@
+/**Colores de la pagina
+#808080 #86c9f282 #389DCB #25d366 #48A9C7 #6CDCF0 #57D0D9 #65FCFA #0e7333
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    top: 0;
+    font-size: 14px;
+    background-color: #86c9f282;
+    min-height: 100vh;
+}
+
+.cabecera {
+    background-color: #9FC8E2;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+}
+
+/*Estilos para el menu*/
+.header {
+    background-image: linear-gradient(to right, #077507, #53cadf, #0e7333);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 3px #808080;
+    z-index: 2;
+}
+
+
+.header .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .logo {
+    color: #ffeeee;
+    text-align: center;
+    padding: 0.5%;
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 200px;
+    margin: 0 auto;
+    image-rendering: auto;
+}
+
+.header .menu {
+    text-align: center;
+    padding: 0.8%;
+    flex-grow: 8;
+    border: none;
+    border-radius: 10%;
+}
+
+.item>li {
+    display: inline-block;
+    margin: 50px;
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item>li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item>li :hover {
+    color: #100dd9;
+    font-size: 20px;
+}
+
+/*Estilos whatsapp*/
+.flotante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(650%);
+    right: 20px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+/*Estilo seccion inicio*/
+.parrafo_inicio {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 550;
+}
+
+/*Transicion de imagenes*/
+.slider {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    float: left;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 500%;
+    overflow: hidden;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 50%;
+    image-rendering: auto;
+}
+
+/*keyframes de la transiciones de las imagenes*/
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/*Estilos seccion quienes somos*/
+.seccion_quienes_somos {
+    min-height: 70vh;
+}
+
+.imagen_quienes_somos {
+    display: flex;
+    margin-left: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 80px;
+    margin-top: 1%;
+    image-rendering: auto;
+    width: 55%;
+}
+
+.vision {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 60%;
+
+
+}
+
+.titulo_vision,
+.titulo_mision {
+    padding: 2%;
+    width: 50%;
+    margin-left: 26%;
+    border-bottom: 2px solid #000000;
+
+}
+
+.parrafo_mision,
+.parrafo_vision {
+    padding: 3%;
+    width: 100%;
+    background-image: linear-gradient(to right, #00d9ff, #2eb735);
+    border-radius: 3%;
+}
+
+.parrafo_mision:hover,
+.parrafo_vision:hover {
+    transition: all 0.5s ease;
+    background-image: linear-gradient(to right, #0ca014, #00d9ff);
+    font-size: 20px;
+
+}
+
+.mision {
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 60%;
+    margin-top: -30%;
+}
+
+/*Estilos seccion servicios*/
+.main_servicios {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.titulo_servicios {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.contenedor_paisajismo,
+.contenedor_carpinteria_metalica,
+.contenedor_mobiliario_paisajistico {
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.titulo_paisajismo,
+.titulo_carpinteria_metalica,
+.titulo_mobiliario_paisajistico {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.contenedor_paisajismo,
+.contenedor_carpinteria_metalica,
+.contenedor_mobiliario_paisajistico p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.paisajismo,
+.carpinteria_meta,
+.mobiliario_paisajistico {
+    border-radius: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio img {
+    width: 95%;
+    height: auto;
+    display: block;
+    image-rendering: auto;
+}
+
+
+.servicio p {
+    margin: 0;
+}
+
+.muros_verdes_servicios img {
+    width: 70%;
+    height: auto;
+    display: block;
+    image-rendering: auto;
+}
+
+.riego_servicios img {
+    width: 70%;
+    height: auto;
+    display: block;
+    image-rendering: auto;
+}
+
+.servicio_micro_aspersion img {
+    width: 60%;
+    height: auto;
+    display: block;
+    image-rendering: auto;
+}
+
+.servicio_mantenimiento img {
+    width: 70%;
+    height: 57%;
+    display: block;
+    image-rendering: auto;
+}
+
+
+
+/*Estilos para seccion proyectos*/
+.main_proyectos {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.titulo_proyectos {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.titulo_proyectos_centros_comeciales,
+.titulo_proyectos_institucionales_colegios,
+.titulo_proyectos_empresariales {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+
+
+/*Estilos seccion talento humano*/
+
+
+
+
+
+/*Estilos seccion formulario*/
+
+.form_contacto {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="proyecto"],
+.content_form {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    padding: 20px 5px;
+    margin-left: 33%;
+}
+
+.content_form * {
+    width: 85%;
+    display: inline-block;
+    margin: 1% 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content_form>input {
+    text-align: left;
+    padding: 7px;
+    outline: none;
+    margin-left: 23%;
+}
+
+#proyecto {
+    overflow: scroll;
+}
+
+.content_form>label {
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 3px solid #0e7333;
+}
+
+/* Estilos para el botón de envío */
+.BotonEnviar[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BotonEnviar[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+/* Estilo para el logo de la empresa */
+.pielogo {
+    padding: 20px;
+    margin-left: auto;
+    text-align: right;
+    float: right;
+    image-rendering: pixelated;
+}
+
+.pielogo .l_empresa {
+    margin-top: -10%;
+    image-rendering: auto;
+    width: 60%;
+    height: 150px;
+}
+
+/* Estilo general para el footer */
+footer {
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    background-color: #3e66899a;
+    padding: 20px;
+    text-align: right;
+    margin-top: 1%;
+}
+
+/* Estilo para los íconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 0 auto;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 auto;
+    padding-left: 30%;
+}
+
+.social-icons img {
+    width: 38px;
+    height: auto;
+    image-rendering: auto;
+}
+
+/* Estilo para el mapa */
+.mapa {
+    width: 27%;
+    height: 35vh;
+    position: absolute;
+    left: 36%;
+    overflow: hidden;
+}
+
+/* Estilo para el certificado */
+.decreto {
+    width: 18.6%;
+    height: auto;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    margin-top: -1%;
+    image-rendering: auto;
+}
+
+.copi {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+}
