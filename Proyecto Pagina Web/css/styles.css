@@ -93,7 +93,7 @@ body {
     width: 60px;
     height: 60px;
     top: 50%;
-    transform: translateY(540%);
+    transform: translateY(600%);
     right: 12px;
     background-color: #25d366;
     color: #ffffff;
@@ -540,7 +540,7 @@ body {
     display: block;
     border-radius: 5%;
     margin-top: 15%;
-    margin-left: 1100px;
+    margin-left: 1200px;
     image-rendering: auto;
 }
 
@@ -581,6 +581,8 @@ body {
     background-size: cover;
     height: 50vw;
     min-height: 100vh;
+    opacity: 85%;
+
 }
 
 .form_contacto {
@@ -727,7 +729,7 @@ footer {
 /* Estilo para el mapa */
 .mapa {
     width: 27%;
-    height: 37vh;
+    height: 30vh;
     position: absolute;
     left: 36%;
     overflow: hidden;
