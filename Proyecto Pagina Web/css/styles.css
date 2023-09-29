@@ -23,19 +23,21 @@ body {
     font-weight: 800;
     text-align: center;
     font-family: 'Mate SC', serif;
+    border-radius: 2%;
+    box-shadow: 2px 3px 2px #808080;
 }
 
 /*Estilos para el menu*/
 .header {
-    background-image: linear-gradient(to right, #077507, #53cadf, #0e7333);
+    background-color: #0e7333;
     position: sticky;
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 3px 3px 3px #808080;
+    box-shadow: 2px 2px 2px 2px #808080;
     z-index: 2;
+    border-radius: 2%;
 }
-
 
 .header .container {
     width: 100%;
@@ -69,7 +71,7 @@ body {
 
 .item>li {
     display: inline-block;
-    margin: 50px;
+    margin: 40px;
     list-style: none;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
@@ -81,7 +83,7 @@ body {
 }
 
 .item>li :hover {
-    color: #100dd9;
+    color: #0f0c9b;
     font-size: 20px;
 }
 
@@ -91,8 +93,8 @@ body {
     width: 60px;
     height: 60px;
     top: 50%;
-    transform: translateY(650%);
-    right: 20px;
+    transform: translateY(540%);
+    right: 12px;
     background-color: #25d366;
     color: #ffffff;
     border-radius: 50px;
@@ -106,13 +108,13 @@ body {
     margin-top: 16px;
 }
 
-
 /*Estilo seccion inicio*/
 .parrafo_inicio {
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-weight: 550;
+    font-weight: 600;
+    background-color: #205070;
 }
 
 /*Transicion de imagenes*/
@@ -198,17 +200,14 @@ body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     padding-left: 60%;
-
-
 }
 
 .titulo_vision,
 .titulo_mision {
-    padding: 2%;
+    padding: 1%;
     width: 50%;
     margin-left: 26%;
     border-bottom: 2px solid #000000;
-
 }
 
 .parrafo_mision,
@@ -247,26 +246,33 @@ body {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
+    border-radius: 5%;
+
 }
 
 .contenedor_paisajismo,
 .contenedor_carpinteria_metalica,
 .contenedor_mobiliario_paisajistico {
     text-align: center;
-    border: 2px solid #000000;
+    background-image: linear-gradient(to right, #0ca014, #037488);
+    border-radius: 1%;
 }
 
 .titulo_paisajismo,
 .titulo_carpinteria_metalica,
 .titulo_mobiliario_paisajistico {
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 35px;
+    border-bottom: 2px solid #000000;
+    padding: 1%;
+    width: 50%;
+    margin-left: 26%;
 }
 
 .contenedor_paisajismo,
 .contenedor_carpinteria_metalica,
 .contenedor_mobiliario_paisajistico p {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
@@ -274,7 +280,6 @@ body {
 .paisajismo,
 .carpinteria_meta,
 .mobiliario_paisajistico {
-    border-radius: 1%;
     display: flex;
     justify-content: space-between;
 }
@@ -287,15 +292,13 @@ body {
 }
 
 
-.servicio p {
-    margin: 0;
-}
-
 .muros_verdes_servicios img {
     width: 70%;
     height: auto;
     display: block;
     image-rendering: auto;
+    margin-left: 30px;
+    border-radius: 5%;
 }
 
 .riego_servicios img {
@@ -303,22 +306,110 @@ body {
     height: auto;
     display: block;
     image-rendering: auto;
+    border-radius: 5%;
 }
 
 .servicio_micro_aspersion img {
-    width: 60%;
+    width: 55%;
     height: auto;
     display: block;
     image-rendering: auto;
+    margin-left: -30px;
+    border-radius: 5%;
 }
 
 .servicio_mantenimiento img {
-    width: 70%;
-    height: 57%;
+    width: 200px;
+    height: 260px;
     display: block;
     image-rendering: auto;
+    margin-left: -200px;
+    border-radius: 5%;
 }
 
+/*Estilos segunda seccion de imagenes*/
+.servicio_esculturas img {
+    width: 300px;
+    height: 380px;
+    display: block;
+    image-rendering: auto;
+    margin-left: 30px;
+    border-radius: 5%;
+}
+
+.servicio_pergolas img {
+    width: 300px;
+    height: 380px;
+    display: block;
+    image-rendering: auto;
+    border-radius: 5%;
+}
+
+.servicio_materas img {
+    width: 380px;
+    height: 370px;
+    display: block;
+    image-rendering: auto;
+    border-radius: 5%;
+}
+
+.servicio_jardin_vertical img {
+    width: 260px;
+    height: 370px;
+    display: block;
+    image-rendering: auto;
+    border-radius: 5%;
+}
+
+/*Estilos tercer seccion de servicios*/
+.servicio_bancas img {
+    width: 530px;
+    height: 350px;
+    display: block;
+    image-rendering: auto;
+    margin-left: 30px;
+    border-radius: 5%;
+}
+
+.servicio_muebles img {
+    width: 330px;
+    height: 350px;
+    display: block;
+    image-rendering: auto;
+    margin-right: 20px;
+    border-radius: 5%;
+}
+
+.servicio_espejos_agua img {
+    width: 310px;
+    height: 350px;
+    display: block;
+    image-rendering: auto;
+    margin-right: 30px;
+    border-radius: 5%;
+}
+
+/*Estilos para texto de imagenes*/
+.muros_texto_servicios {
+    width: 100%;
+    margin-left: -60px;
+
+}
+
+.riego_texto_servicios {
+    width: 100%;
+    margin-left: -65px;
+}
+
+.aspersion_texto_servicios {
+    width: 100%;
+    margin-left: -160px;
+}
+
+.mantenimiento_texto_servicios {
+    width: 100%;
+    margin-left: -190px;
+}
 
 
 /*Estilos para seccion proyectos*/
@@ -332,24 +423,163 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 45px;
+    padding: -1%;
+    width: 50%;
+    margin-left: 26%;
+    border-bottom: 2px solid #000000;
 }
 
-.titulo_proyectos_centros_comeciales,
+.titulo_proyectos_comeciales,
 .titulo_proyectos_institucionales_colegios,
-.titulo_proyectos_empresariales {
-    text-align: right;
+.titulo_proyectos_empresariales,
+.titulo_proyectos_residenciales {
+    text-align: left;
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
 }
 
+.proyectos_residenciales {
+    display: flex;
+}
+
+.proyectos_residenciales img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    image-rendering: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+
+.proyectos_residenciales img:hover {
+    transition: all 0.5s ease-out;
+    box-shadow: 5px 6px 7px #0e7333;
+}
+
+.proyectos_comerciales {
+    display: flex;
+}
+
+.proyectos_comerciales img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    image-rendering: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+
+.proyectos_comerciales img:hover {
+    transition: all 0.5s ease-out;
+    box-shadow: 5px 6px 7px #0e7333;
+}
+
+.proyectos_institucionales {
+    display: flex;
+}
+
+.proyectos_institucionales img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    image-rendering: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+
+.proyectos_institucionales img:hover {
+    transition: all 0.5s ease-out;
+    box-shadow: 5px 6px 7px #0e7333;
+}
+
+.proyectos_empresariales {
+    display: flex;
+}
+
+.proyectos_empresariales img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    image-rendering: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+
+.proyectos_empresariales img:hover {
+    transition: all 0.5s ease-out;
+    box-shadow: 5px 6px 7px #0e7333;
+}
 
 /*Estilos seccion talento humano*/
+.main_talento_humano {
+    min-height: 160vh;
+    width: 100%;
+}
 
+.personal_tecnico img,
+.personal_diseño img {
+    display: flex;
+    justify-content: space-between;
+    display: block;
+    width: 25%;
+    height: 600px;
+    border-radius: 5%;
+    margin-left: 50px;
+    margin-top: 50px;
+    image-rendering: auto;
+}
 
+.personal_diseño img {
+    width: 500px;
+    height: 450px;
+    display: block;
+    border-radius: 5%;
+    margin-top: 15%;
+    margin-left: 120vh;
+    image-rendering: auto;
+}
 
+.personal_tecnico img:hover {
+    transition: all 0.5s ease-out;
+    box-shadow: 5px 5px 7px #0e7333;
+}
 
+.personal_diseño img:hover {
+    transition: all 0.5s ease-out;
+    box-shadow: 5px 5px 7px #0e7333;
+}
+
+/*Estilos texto talento humano*/
+.personal_tecnico_texto {
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+    margin-left: 490px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+}
+
+.personal_diseño_texto {
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+    margin-right: 660px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+}
 
 /*Estilos seccion formulario*/
+.main_form {
+    background-image: url(../img/muro_verde_formulario.png);
+    background-size: cover;
+    height: 46vw;
+}
 
 .form_contacto {
     color: #3498db;
@@ -370,6 +600,14 @@ input[type="proyecto"],
     display: inline-block;
     padding: 20px 5px;
     margin-left: 33%;
+    color: #ffffff;
+    text-shadow: 4px 2px 4px #000000cc;
+    font-weight: bold;
+    filter: saturate(300%);
+}
+
+.content_form label {
+    font-size: 30px;
 }
 
 .content_form * {
@@ -387,6 +625,10 @@ input[type="proyecto"],
     margin-left: 23%;
 }
 
+.texto_proyecto {
+    outline: none;
+}
+
 #proyecto {
     overflow: scroll;
 }
@@ -394,7 +636,7 @@ input[type="proyecto"],
 .content_form>label {
     padding: 10px 2px;
     border: none;
-    border-bottom: 3px solid #0e7333;
+    border-bottom: 3px solid #3498db;
 }
 
 /* Estilos para el botón de envío */
@@ -408,8 +650,20 @@ input[type="proyecto"],
     transition: background-color 0.3s ease;
 }
 
+.button_send {
+    background-color: #078e07;
+    font-size: 22px;
+}
+
+.button_send:hover {
+    background-color: #00d9ff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
 .BotonEnviar[type="submit"]:hover {
     background-color: #2980b9;
+    transition: all 0.5s ease-out;
 }
 
 
@@ -488,4 +742,50 @@ footer {
 .copi {
     text-align: right;
     font-family: 'Poppins', sans-serif;
+}
+
+
+
+@media (min-width: 350px) and (max-width: 1075px) {
+    .cabecera {
+        font-size: 22px;
+    }
+
+    .header .logo {
+        color: #ffeeee;
+        text-align: center;
+        padding: 0.5%;
+        flex-grow: 1;
+    }
+
+    .logo img {
+        width: 200px;
+        margin: 0 auto;
+        image-rendering: auto;
+    }
+
+    .header .menu {
+        text-align: center;
+        padding: 0.1px;
+        border-radius: 10%;
+    }
+
+    .item>li {
+        display: inline-block;
+        margin: 20px;
+        list-style: none;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .item>li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .item>li :hover {
+        color: #0f0c9b;
+        font-size: 20px;
+    }
+
 }
