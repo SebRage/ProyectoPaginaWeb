@@ -1,5 +1,5 @@
 /**Colores de la pagina
-#808080 #86c9f282 #389DCB #25d366 #48A9C7 #6CDCF0 #57D0D9 #65FCFA #0e7333
+#808080 #86c9f282 #9FC8E2 #000000 #0e7333 #ffeeee #ffffff #0f0c9b #25d366 #999999 #205070 #00d9ff #2eb735 #0ca014 #037488 #3498db #000000cc #078e07 #3e66899a #2980b9
 */
 
 * {
@@ -195,9 +195,9 @@ body {
 
 .vision {
     text-align: center;
-    color: black;
+    color: #000000;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     padding-left: 60%;
 }
@@ -208,6 +208,7 @@ body {
     width: 50%;
     margin-left: 26%;
     border-bottom: 2px solid #000000;
+    font-size: 22px;
 }
 
 .parrafo_mision,
@@ -222,7 +223,7 @@ body {
 .parrafo_vision:hover {
     transition: all 0.5s ease;
     background-image: linear-gradient(to right, #0ca014, #00d9ff);
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -230,7 +231,7 @@ body {
     text-align: center;
     color: #000000;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     padding-left: 60%;
     margin-top: -30%;
@@ -516,7 +517,7 @@ body {
 
 /*Estilos seccion talento humano*/
 .main_talento_humano {
-    min-height: 160vh;
+    min-height: 140vh;
     width: 100%;
 }
 
@@ -539,7 +540,7 @@ body {
     display: block;
     border-radius: 5%;
     margin-top: 15%;
-    margin-left: 120vh;
+    margin-left: 1100px;
     image-rendering: auto;
 }
 
@@ -578,7 +579,8 @@ body {
 .main_form {
     background-image: url(../img/muro_verde_formulario.png);
     background-size: cover;
-    height: 46vw;
+    height: 50vw;
+    min-height: 100vh;
 }
 
 .form_contacto {
@@ -601,7 +603,7 @@ input[type="proyecto"],
     padding: 20px 5px;
     margin-left: 33%;
     color: #ffffff;
-    text-shadow: 4px 2px 4px #000000cc;
+    text-shadow: 2px 3px 4px #000000cc;
     font-weight: bold;
     filter: saturate(300%);
 }
@@ -623,10 +625,14 @@ input[type="proyecto"],
     padding: 7px;
     outline: none;
     margin-left: 23%;
+    color: #000000;
+    text-shadow: none;
 }
 
 .texto_proyecto {
     outline: none;
+    color: #000000;
+    font-weight: bold;
 }
 
 #proyecto {
@@ -642,7 +648,7 @@ input[type="proyecto"],
 /* Estilos para el botón de envío */
 .BotonEnviar[type="submit"] {
     background-color: #3498db;
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -721,7 +727,7 @@ footer {
 /* Estilo para el mapa */
 .mapa {
     width: 27%;
-    height: 35vh;
+    height: 37vh;
     position: absolute;
     left: 36%;
     overflow: hidden;
@@ -744,48 +750,305 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-@media (min-width: 350px) and (max-width: 1075px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .cabecera {
-        font-size: 22px;
+        font-size: 18px;
+        font-weight: 400;
     }
 
-    .header .logo {
-        color: #ffeeee;
-        text-align: center;
-        padding: 0.5%;
-        flex-grow: 1;
+    .parrafo_inicio {
+        font-size: 18px;
+        font-weight: 400;
     }
 
     .logo img {
-        width: 200px;
-        margin: 0 auto;
-        image-rendering: auto;
-    }
-
-    .header .menu {
-        text-align: center;
-        padding: 0.1px;
-        border-radius: 10%;
+        width: 100px;
     }
 
     .item>li {
-        display: inline-block;
-        margin: 20px;
-        list-style: none;
-        font-size: 18px;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .item>li a {
-        color: #ffffff;
-        text-decoration: none;
+        margin: 14px;
+        font-size: 10px;
     }
 
     .item>li :hover {
-        color: #0f0c9b;
-        font-size: 20px;
+        font-size: 15px;
     }
 
+    /*Estilos whatsapp*/
+    .flotante {
+        transform: translateY(700%);
+    }
+
+    .slider {
+        width: 100%;
+        height: 57vh;
+    }
+
+    .slider img {
+        width: 120%;
+        height: 85%;
+    }
+
+    /* Estilo para los íconos sociales */
+    .social-icons {
+        padding-left: 45%;
+    }
+
+    .social-icons img {
+        width: 38px;
+        height: auto;
+        image-rendering: auto;
+    }
+
+    /* Estilo para el mapa */
+    .mapa {
+        margin-top: 30px;
+        width: 30%;
+        height: 22vh;
+        left: 34%;
+    }
+
+    /* Estilo para el logo de la empresa */
+    .pielogo .l_empresa {
+        width: 50%;
+        height: 135px;
+    }
+
+    /* Estilo para el certificado */
+    .decreto {
+        width: 40%;
+        height: 30vh;
+        left: -5.2%;
+    }
+
+    .copi {
+        text-align: right;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*Estilos seccion quienes somos*/
+    .seccion_quienes_somos {
+        min-height: 50vh;
+    }
+
+    .imagen_quienes_somos {
+        display: flex;
+        margin-left: 1px;
+        margin-top: 40px;
+        width: 48%;
+        height: 40vh;
+    }
+
+    .vision {
+        font-size: 12px;
+    }
+
+    .titulo_vision,
+    .titulo_mision {
+        padding-top: 10%;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .parrafo_mision,
+    .parrafo_vision {
+        margin-top: -5%;
+        font-size: 12px;
+        margin-left: -18%;
+    }
+
+    .parrafo_mision:hover,
+    .parrafo_vision:hover {
+        font-size: 13px;
+    }
+
+    .mision {
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        padding-left: 60%;
+        margin-top: -58%;
+    }
+
+    /*Estilos seccion servicios*/
+    .contenedor_paisajismo,
+    .contenedor_carpinteria_metalica,
+    .contenedor_mobiliario_paisajistico p {
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .muros_verdes_servicios img {
+        margin-left: 12px;
+    }
+
+    .riego_servicios img {
+        margin-left: -40px;
+    }
+
+    .servicio_micro_aspersion img {
+        margin-left: -80px;
+    }
+
+    .servicio_mantenimiento img {
+        width: 160px;
+        height: 120px;
+        margin-left: -190px;
+    }
+
+    /*Estilos para textos de imagenes*/
+    .muros_texto_servicios {
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .riego_texto_servicios {
+        width: 100%;
+        margin-left: -65px;
+    }
+
+    .aspersion_texto_servicios {
+        width: 80%;
+        margin-left: -108px;
+    }
+
+    .mantenimiento_texto_servicios {
+        width: 100%;
+        margin-left: -160px;
+    }
+
+    .esculturas_texto {
+        width: 100%;
+        margin-left: -20px
+    }
+
+    .pergolas_texto {
+        width: 100%;
+        margin-left: -30px;
+    }
+
+    .jardines_verticales_texto {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    /*Estilos segunda seccion de imagenes*/
+    .servicio_esculturas img {
+        width: 180px;
+        height: 190px;
+        margin-left: 8px;
+    }
+
+    .servicio_pergolas img {
+        width: 160px;
+        height: 180px;
+        margin-left: -50px;
+    }
+
+    .servicio_materas img {
+        width: 155px;
+        height: 180px;
+    }
+
+    .servicio_jardin_vertical img {
+        width: 165px;
+        height: 190px;
+        margin-left: 20px;
+    }
+
+    /*Estilos tercer seccion de servicios*/
+    .servicio_bancas img {
+        width: 220px;
+        height: 130px;
+        margin-left: 10px;
+    }
+
+    .servicio_muebles img {
+        width: 220px;
+        height: 130px;
+        margin-left: 10px;
+    }
+
+    .servicio_espejos_agua img {
+        width: 220px;
+        height: 130px;
+    }
+
+    /*Estilos para seccion proyectos*/
+    .proyectos_residenciales,
+    .proyectos_comerciales,
+    .proyectos_institucionales,
+    .proyectos_empresariales {
+        display: flex;
+    }
+
+    .proyectos_residenciales img,
+    .proyectos_comerciales img,
+    .proyectos_institucionales img,
+    .proyectos_empresariales img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .proyectos_residenciales img:hover,
+    .proyectos_comerciales img:hover,
+    .proyectos_institucionales img:hover,
+    .proyectos_empresariales img:hover {
+        transition: all 0.5s ease-out;
+        box-shadow: 2px 3px 4px #0e7333;
+    }
+
+    /*Estilos seccion talento humano*/
+    .main_talento_humano {
+        min-height: 102vh;
+    }
+
+    .personal_tecnico img,
+    .personal_diseño img {
+        width: 40%;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+
+    .personal_diseño img {
+        width: 400px;
+        height: 400px;
+        margin-top: 250px;
+        margin-left: 350px;
+    }
+
+    /*Estilos texto talento humano*/
+    .personal_tecnico_texto {
+        margin-left: 440px;
+        font-size: 40px;
+        margin-top: -55%;
+    }
+
+    .personal_diseño_texto {
+        margin-right: 440px;
+        font-size: 40px;
+    }
+
+    /*Cuadrar formulario responsivo*/
+    .main_form {
+        background-size: cover;
+        height: 50vw;
+        min-height: 80vh;
+    }
+
+    /* Estilos para los campos de entrada */
+    .content_form {
+        width: 50%;
+        padding: 20px 5px;
+        margin-left: 27%;
+    }
+
+    .content_form>input {
+        margin-left: 13%;
+        padding: 15px;
+        width: 60%;
+    }
+
+    .texto_proyecto {
+        font-weight: normal;
+    }
 }
